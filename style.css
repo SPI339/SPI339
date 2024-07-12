@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Add accessible line-height */
+/* 4. Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #b4cded;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Remove built-in form typography styles */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #344966; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Lalezar;
+
+}
+
+
+.header__logo__img {
+    height: 95px;
+    margin-right: 10px; 
+}
+
+.header__nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Lalezar;
+    background-color: #B4CDED;
+    padding: 10px 20px;
+    border-radius: 35px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.button:hover {
+    background-color: #344966;
+    border: 5px solid #B4CDED;
+    padding: 6px 16px;
+    -webkit-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+}
+
+/* MAIN */
+.main__patron {
+    position: relative;
+    margin-top: 70px;
+}
+
+.main__patron__wrapper {
+    position: relative;
+    overflow: hidden;
+    height: calc(100% - 300px);
+    margin-bottom: -335px;
+}
+
+.main__patron__img {
+    width: 100%;
+    position: relative;
+    top: -80px; 
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;   
+}
+
+.main__patron__button {
+    position: absolute;
+    top: 40%; 
+    left: 13%; 
+    background-color: #B4CDED;
+    padding: 20px 30px;
+    border-radius: 65px;
+    color: white;
+    text-decoration: none;
+    font-size: 58px;
+    font-family: Lalezar;
+}
+
+.main__patron__button:hover {
+    background-color: transparent;
+    border: 5px solid #B4CDED;
+    padding: 16px 26px;
+    -webkit-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+}
+/*Ostatni Film*/
+
+.main__film {
+    background-color: #344966;
+    width: auto;
+    margin-top: -235px;
+    padding: 90px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-bottom: -50px;
+}
+
+.main__film__title {
+    position: relative;
+    color: white;
+    font-size: 100px;
+    font-family: Lalezar;
+    text-align: left;
+    top: 430px;
+    padding-left: 210px;
+}
+
+.main__film__video {
+    display: block;
+    margin: 0 150px 0 auto;
+    border-radius: 25px;
+}
+
+/*Zespół i Karuzela*/
+.main__team {
+    padding: 100px;
+}
+
+.main__list {
+    background-color: #344966;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 900px; 
+    border-radius: 35px;
+}
+
+.main__list__team {
+    font-family: 'Lalezar', sans-serif; 
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    list-style: none; 
+    padding: 0;
+}
+
+
+.main__list__title__big {
+    font-size: 70px;
+    list-style: none;
+}
+.main__list__title__small {
+    font-size: 50px;
+    list-style: none;
+}
+.slick-list {
+    border-radius: 35px;
+}
+
+
+/*Footer*/
+.footer__div{
+    background-color: #344966;
+    color: white;
+    font-size: 35px;
+    font-family: Lalezar;
+    padding: 25px;
+    text-align: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.footer__button__YT {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Lalezar;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 35px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100px;
+    
+}
+
+.footer__button__YT:hover {
+    border: 5px solid #B4CDED;
+    padding: 6px 16px;
+    -webkit-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 24px 0px rgba(255, 255, 255, 1);
+}
